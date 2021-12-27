@@ -1,9 +1,10 @@
-import * as React from "react"
-import { StoreProvider } from "./src/context/store-context"
-import "./src/styles/reset.css"
-import "./src/styles/variables.css"
-import "./src/styles/global.css"
+// custom typefaces
+import "typeface-montserrat"
+import "typeface-merriweather"
+// normalize CSS across browsers
+import "./src/normalize.css"
+// custom CSS styles
+import "./src/style.css"
 
-export const wrapRootElement = ({ element }) => (
-  <StoreProvider>{element}</StoreProvider>
-)
+// Highlighting for code blocks
+import "prismjs/themes/prism.css"
